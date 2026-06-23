@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Data / ML artifacts
+data/
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+
+# VSCode
+.vscode/*
+
+# OS files
+.DS_Store
+Thumbs.db
