@@ -1,14 +1,14 @@
 # Uncertainty-Aware Histopathology Survival Analysis
 
-**## Pipeline
+## Pipeline
 
 ```mermaid
 flowchart TD
     A["① Data Preparation\nSVS slides + BCR XML\ndownload from GDC Portal"]
     B["② Preprocessing — Trident\nSegmentation → Patching → Feature Extraction\nUNI / CONCH Foundation Models"]
     C["③ MIL Model — Patches → Slide Representation\nABMIL / CLAM / TransMIL / HipoMap\nN patches → 1 slide vector 512-dim"]
-    D["④ Survival Training\nCox Loss\n+ SurvRNC Loss Contrastive\n+ SNGP Uncertainty"]
-    E["⑤ Evaluation & Visualization\nC-index / Kaplan-Meier / Attention Heatmap\nModel comparison + uncertainty intervals"]
+    D["④ Survival Training\nCox Loss + SurvRNC Loss + SNGP Uncertainty"]
+    E["⑤ Evaluation and Visualization\nC-index / Kaplan-Meier / Attention Heatmap"]
 
     A --> B --> C --> D --> E
 
@@ -17,7 +17,7 @@ flowchart TD
     style C fill:#ede8f5,stroke:#96c
     style D fill:#fdecea,stroke:#e88
     style E fill:#eaf5ea,stroke:#6a6
-```**
+```
 
 ## Datasets
 - The Cancer Genome Atlas Program (TCGA) Lung Adenocarcinoma (LUAD)
