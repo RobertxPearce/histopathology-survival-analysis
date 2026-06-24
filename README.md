@@ -4,7 +4,7 @@
 
 ```mermaid
 flowchart TD
-    A["① Data Preparation\nSVS slides + BCR XML\ndownload from GDC Portal"]
+    A["① Data Preparation\nSVS slides + survival data \ndownload from GDC Portal"]
     B["② Preprocessing — Trident\nSegmentation → Patching → Feature Extraction\nUNI / CONCH Foundation Models"]
     C["③ MIL Model — Patches → Slide Representation\nABMIL / CLAM / TransMIL / HipoMap\nN patches → 1 slide vector 512-dim"]
     D["④ Survival Training\nCox Loss + SurvRNC Loss + SNGP Uncertainty"]
