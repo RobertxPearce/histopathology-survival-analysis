@@ -1,5 +1,24 @@
 # Uncertainty-Aware Histopathology Survival Analysis
 
+**## Pipeline
+
+```mermaid
+flowchart TD
+    A["① Data Preparation\nSVS slides + BCR XML\ndownload from GDC Portal"]
+    B["② Preprocessing — Trident\nSegmentation → Patching → Feature Extraction\nUNI / CONCH Foundation Models"]
+    C["③ MIL Model — Patches → Slide Representation\nABMIL / CLAM / TransMIL / HipoMap\nN patches → 1 slide vector 512-dim"]
+    D["④ Survival Training\nCox Loss\n+ SurvRNC Loss Contrastive\n+ SNGP Uncertainty"]
+    E["⑤ Evaluation & Visualization\nC-index / Kaplan-Meier / Attention Heatmap\nModel comparison + uncertainty intervals"]
+
+    A --> B --> C --> D --> E
+
+    style A fill:#f5f0eb,stroke:#999
+    style B fill:#e8f5f5,stroke:#6bc
+    style C fill:#ede8f5,stroke:#96c
+    style D fill:#fdecea,stroke:#e88
+    style E fill:#eaf5ea,stroke:#6a6
+```**
+
 ## Datasets
 - The Cancer Genome Atlas Program (TCGA) Lung Adenocarcinoma (LUAD)
     - Data Source: [National Cancer Institute GDC Data Portal](https://portal.gdc.cancer.gov/)
@@ -20,7 +39,7 @@
 |----------------------| -------------------------------------- |
 | Robert Pearce        | University of Nevada, Las Vegas        |
 | Sejun Park           | Gyeonggi Science Technology University |
-| Hailey (Heejae Kwon) | Soookmyung Womens University           |
+| Hailey (Heejae Kwon) | Sookmyung Womens University           |
 | HyeonKyeong Lee      | Gyeongsang National University         |
 
 ## Acknowledgments
