@@ -43,4 +43,4 @@ flowchart TD
 | HyeonKyeong Lee      | Gyeongsang National University         |
 
 ## Acknowledgments
-This project was completed during the International Machine Learning Camp hosted by the [University of Nevada, Las Vegas](https://www.unlv.edu/cs). Resources and guidance were provided by [Dr. Mingon Kang](https://kang.dataxlab.org/index.php).
+This project was completed during the International AI & Machine Learning Summer Camp hosted by the [University of Nevada, Las Vegas](https://www.unlv.edu/cs). Resources and guidance were provided by [Dr. Mingon Kang](https://kang.dataxlab.org/index.php).
