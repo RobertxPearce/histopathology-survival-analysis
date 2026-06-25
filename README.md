@@ -39,7 +39,7 @@ flowchart TD
 |----------------------| -------------------------------------- |
 | Robert Pearce        | University of Nevada, Las Vegas        |
 | Sejun Park           | Gyeonggi Science Technology University |
-| Hailey (Heejae Kwon) | Sookmyung Womens University           |
+| Hailey(Heejae Kwon)  | Sookmyung Womens University            |
 | HyeonKyeong Lee      | Gyeongsang National University         |
 
 ## Acknowledgments
